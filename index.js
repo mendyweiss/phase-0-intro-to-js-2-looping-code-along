@@ -16,18 +16,22 @@ function wrapGifts(gifts) {
 
 wrapGifts(gifts);
 
-const thankYouCardArray = [];
+// const thankYouCardArray = [];
 function writeCards(arrayName, eventsName) {
-    for (let i = 0; i < arrayName.length; i++) {
-        let message = `Thank you ${arrayName[i]}, for the woundeful ${eventsName} gift!`;
-        thankYouCardArray.push(message);
-    }
-}
-writeCards(["Bob", "Micheal", "Dave"], "Baby Shower");
-console.log(thankYouCardArray);
+    const thankYouCardArray = [];
 
-function countdown(int) {
-    while (int > 0) {
+    for (let i = 0; i < arrayName.length; i++) {
+        let message = `Thank you, ${arrayName[i]}, for the wonderful ${eventsName} gift!`;
+        thankYouCardArray.push(message);
+        
+    }
+    return thankYouCardArray;
+}
+// writeCards(["Bob", "Micheal", "Dave"], "Baby Shower");
+// console.log(thankYouCardArray);
+
+function countDown(int) {
+    while (int >= 0) {
         console.log(int);
         int--;
     }
